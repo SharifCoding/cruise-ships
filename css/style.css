@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* justify-content aligns items horizontally
+align-items vertically */
+
+#viewport {
+    width: 640px;
+    height: 256px;
+    position: relative;
+    overflow-x: auto;
+    background-image: url('../img/water0.png');
+}
+/* position: relative; any items inside of the viewport to base their 
+X/Y co-ordinates off of the top left of the viewport, not the browser window.
+overflow-x: auto; want the viewport to scroll horizontally if children exceed the width. */
+
+#ports {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-around;
+}
+/* space-around will give equal spacing around each of the element's children. */
+
+#ports > .port {
+    width: 64px;
+    height: 32px;
+    background-image: url('../img/port.png');
+}
+
+#ship {
+    width: 128px;
+    height: 64px;
+    background-image: url('../img/ship.png');
+    position: absolute;
+}
+/* position: absolute - position the element relative to the nearest outer element
+with a position: relative rule (or the body if one doesn't exist) */
+/* position: relative set on the #viewport element so ship element positions itself relative to this */
+
+#sailbutton {
+    border: 0;
+    border-top: 3px solid saddlebrown;
+    border-bottom: 4px solid crimson;
+    background-color: red;
+    color: antiquewhite;
+    font-family: inherit;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+/* CSS from Google Fonts added to #sailbutton with fallback to the cursive font */
+
+#sailbutton:focus {
+    background-color: #d8040f;
+    border-bottom-width: 0;
+    padding-top: 14px;
+}
+/* add styling for when the button is clicked using :focus: */
+
+#message {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: crimson;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid saddlebrown;
+    border-bottom: 4px solid crimson;
+    background-color: antiquewhite;
+}
+/* add styling for #message overlapping #sailbutton */
+
+#currentHUD, #nextHUD {
+    padding: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+    position: absolute;
+}
+/* add styling for #currentHUD, #nextHUD overlapping #viewport */
+
+#currentHUD {
+    top: 0;
+    left: 0;
+}
+
+#nextHUD {
+    top: 0;
+    right: 0;
+}

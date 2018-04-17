@@ -1,0 +1,26 @@
+{
+  "name": "cruise-ships",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharifCoding/cruise-ships.git"
+  },
+  "author": "SharifCoding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharifCoding/cruise-ships/issues"
+  },
+  "homepage": "https://github.com/SharifCoding/cruise-ships#readme",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jest": "^22.4.2"
+  }
+}
