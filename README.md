@@ -1,7 +1,7 @@
 # Cruise Ships :ship:
 There's a lot more to a smooth cruise ship operation than just sailing a ship. Ships dock at different ports based on a travel itinerary. These ports can only take so many ships at a time. Did we mention that these cruise ships are operated by the _British_!? They'll refuse to sail in even the tamest weather conditions.
 
-<b>Heroku Link - https://cruise-ship.herokuapp.com/</b>
+<b>Assignment Link - https://sharifcoding.github.io/projects/cruiseship/home.html</b>
 
 ![sail](./sail.png)
 
